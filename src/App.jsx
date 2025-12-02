@@ -14,7 +14,13 @@ const filmList = [
 
 function App() {
 
-  return 
+  return (<div className="container">
+    <ul className='list-group'>
+      {filmList.map((film, index) => (<li className="list-group-item" key={index}>{film.title}</li>
+      ))}
+    </ul>
+  </div>
+  )
 }
 
 export default App
